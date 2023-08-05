@@ -1,0 +1,87 @@
+.navigation {
+    display: flex;
+    width: 100%;
+    padding: 0.8rem 0.80rem;
+}
+
+.links a {
+    text-decoration: none;
+    background-color: #e5e5e5;
+    padding: 6px;
+    color: black;
+    border-radius: 8px;
+}
+
+.search-bar {
+    padding-left: 60px;
+}
+
+.search-box input {
+    width: 200px;
+    height: 20px;
+    border-radius: 4px;
+    min-width: none;
+}
+
+.search-box img {
+    width: 35px;
+    height: 35px;
+}
+
+.buttons-login {
+    
+    padding: 0px 60px;
+}
+
+.buttons-login button {
+    width: 80px;
+    height: 30px;
+}
+
+.card {
+    display: inline-block;
+    flex-direction: column;
+    background-color: #e5e5e5;
+    max-width: 400px;
+    min-width: 400px;
+    border-radius: 10px;
+    margin: 0 auto;
+    height: 250px;
+    
+}
+
+.content {
+    padding: 10px;
+}
+
+.title {
+    padding-top: 4px;
+    padding-left: 10px;
+}
+
+.text-content p {
+    padding: 10px;
+    text-align: justify;
+}
+
+.text-content form {
+    padding: 10px;
+}
+
+.form-content {
+    display: flex;
+    padding-top: 4px;
+}
+
+.form-content input:required {
+    border: 2px solid;
+}
+
+.form-content-button {
+    padding-top: 4px;
+    justify-content: center;
+}
+
+.form-content-button button {
+    cursor: pointer;
+}
