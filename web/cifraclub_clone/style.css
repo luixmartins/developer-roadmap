@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+}
+
+#navigation {
+    width: 100%;
+    display: flex;
+    background-color: #fff;
+    align-items: center;
+    padding-top: 10px;
+
+    height: 40px;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+
+#search-bar {
+    width: 600px;
+    margin: 10px;
+    float: left;
+    margin-left: 180px;
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+
+#cifraclub-icon {
+    margin-top: 8px;
+}
+
+#search-bar input {
+    margin: auto 20px;
+    width: 300px;
+    height: 25px;
+    text-align: justify;
+    border: 1px solid #d3d3d3;
+    border-radius: 4px;
+    position: relative;
+    top: -25px;
+    padding: 4px;
+}
+
+input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    font-size: 18px;
+}
+
+#search-icon {
+    border-radius: 6px;
+    width: 32px;
+    position: relative;
+    top: -14.5px;
+    margin-left: -60px;
+
+}
+
+#pro-icon {
+    border-radius: 8px;
+    margin-right: 20px;
+    width: 100px;
+}
+
+#links {
+    float: right;
+    width: 600px;
+    justify-content: end;
+    position: absolute;
+    right: 0px;
+    padding-top: 10px;
+}
+
+#link-pages{
+    text-decoration: none;
+    color: #1b1b39;
+    position: relative;
+    font-size: 1.4em;
+    top: -10px;
+    margin-left: 10px;
+    font-size: 1.2em;
+}
+
+#vertical-line-nav {
+    margin-left: 10px;
+    color: #d3d3d3;
+    font-size: 30px;
+    position: relative;
+    bottom: 9px;
+}
+
+#horizontal-line {
+    border: 1px solid #d3d3d3;
+    width: 100%;
+    margin-top: 65px;
+    z-index: 2;
+}
+
+.container {
+    background-color: #fff;
+    width: 70%;
+    height: 900px;
+    margin: 30px auto;
+    z-index: 0;
+}
+
+#music-generes {
+    background-color: #fff;
+    padding: 10px auto; 
+}
+
+#music-generes a {
+    margin: 1px;
+    text-decoration: none;
+    color: #1b1b39;
+    border: 1px solid #d3d3d3;
+    padding: 5px 8px;
+    border-radius: 6px;
+}
+
+#music-generes a:hover {
+    background: #1b1b39;
+    color: #fff;
+}
+
+#main-images {
+    margin-top: 20px;
+    width: 100%;
+}
+
+#link-main-image {
+    margin: auto;
+}
+
+#main-image {
+    border-radius: 8px;
+}
+
+#link-images {
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    margin: 1px auto;
+    width: 100%;
+}
+
+#link-images a {
+    margin: auto;
+    padding: 4px;
+}
+
+#link-images a img{
+    width: 230px;
+    margin: auto;
+    border-radius: 8px;
+}
