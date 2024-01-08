@@ -52,7 +52,7 @@ main {
     position: relative;
     display: flex;
     align-items: center;
-    margin-bottom: 32px;
+    margin-bottom: 40px;
 }
 
 .sidebar-top .logo {
