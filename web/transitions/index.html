@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transitions</title>
+    <style>
+        * { 
+            margin: 0;
+        }
+        #container { 
+            width: 50px;
+            height: 100vh;
+            background-color: black;
+            transition: width 1s;
+            position: fixed;
+        }
+
+        #container:hover { 
+            width: 200px;
+        }
+
+        li a{ 
+            display: flex;
+            width: 80px;
+            margin-top: 10px;
+            padding: 2px;
+            text-decoration: none;
+            border: 1px solid blue;
+            border-radius: 2px;
+            opacity: 0; 
+        }
+
+        .show { 
+            opacity: 1;
+            transition: 1.5s;
+        }
+
+        ul { 
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <ul>
+            <li>
+                <a href="#" class="hide">Home</a>
+                <a href="#" class="hide">Products</a>
+            </li>
+        </ul>
+    </div>
+
+    <script>
+        let element = document.getElementById("container")
+        let links = document.querySelectorAll(".hide")
+
+        element.addEventListener("mouseover", function() {
+            links.forEach(function(link) {
+                link.classList.add("show")
+            })
+        })
+
+        element.addEventListener("mouseleave", function() { 
+            links.forEach(function(link) { 
+                link.classList.remove("show")
+            })
+        })
+    </script>
+</body>
+</html>
+
