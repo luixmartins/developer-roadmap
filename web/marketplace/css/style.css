@@ -1,0 +1,63 @@
+:root {
+    --primary: #222831;
+    --secondary: #31363F;
+    --tertiary: #76ABAE;
+    --quaternary: #EEEEEE;
+}
+
+body {
+    background-color: var(--quaternary);
+}
+
+
+h1 {
+    color: var(--tertiary);
+}
+
+.navbar {
+    background-color: var(--primary);
+}
+
+.navbar-brand {
+    color: var(--quaternary);
+}
+
+.input-search {
+    width: 400px;
+    background-color: var(--quaternary);
+    border: 1px solid var(--secondary);
+}
+
+.btn {
+    color: var(--quaternary);
+    background-color: var(--secondary);
+    border: 1px solid var(--secondary);
+}
+
+.btn:hover {
+    color: var(--tertiary);
+    background-color: var(--primary);
+    border: 1px solid var(--primary);
+}
+
+.bi {
+    color: var(--quaternary);
+}
+
+.nav-link {
+    color: var(--quaternary);
+}
+
+.nav-link:hover {
+    color: var(--tertiary);
+    background-color: var(--primary);
+}
+
+
+@media only screen and (min-width: 668px) { 
+    #carouselWallpapers, .carousel-inner { 
+        height: 400px;
+    }
+
+
+}
