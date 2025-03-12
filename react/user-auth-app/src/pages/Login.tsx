@@ -8,8 +8,25 @@ import {
 } from '@/components/ui/card'
 import { Input } from '@/components/ui/input';
 import { cn } from "@/lib/utils"
+import { useState } from 'react';
+
+import login from "@/api/login"; 
 
 const Login = () => {
+    const [data, setData] = useState({
+        "email": "", 
+        "password": ""
+    })
+
+    const handleClick = (key: string, value: string) => { 
+        setData({ ...data, [key]: value }); 
+    }
+
+    const createLogin = async () => { 
+        const response = await login(data)
+
+        console.log(response)
+    }
     return (
         <Card >
             <CardHeader>
@@ -23,12 +40,12 @@ const Login = () => {
                 'text-lg p-5'
             )}>
                 <p>Email</p>
-                <Input className=''/>
+                <Input className='' value={data.email} onChange={(e) => handleClick("email", e.target.value)} required/>
                 <p >Password</p>
-                <Input />
+                <Input value={data.password} onChange={(e) => handleClick("password", e.target.value)} required/>
             </CardContent>
             <CardFooter>
-            <Button variant="outline" className='text-lg w-100'>Login</Button>
+            <Button variant="outline" className='text-lg w-100 cursor-pointer' onClick={createLogin}>Login</Button>
 
             </CardFooter>
         </Card>
